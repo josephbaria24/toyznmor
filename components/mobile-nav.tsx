@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Home, LayoutGrid, ShoppingCart, Settings } from "lucide-react"
@@ -9,7 +10,12 @@ import { cn } from "@/lib/utils"
 
 export function MobileNav() {
   const pathname = usePathname()
+  const [mounted, setMounted] = useState(false)
   const totalItems = useCart((state) => state.getTotalItems())
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const navItems = [
     { href: "/", label: "Home", icon: Home },
@@ -36,10 +42,10 @@ export function MobileNav() {
             >
               <Icon className="h-5 w-5" />
               <span className="text-xs font-medium">{item.label}</span>
-              {item.badge && item.badge > 0 && (
+              {mounted && item.badge && item.badge > 0 && (
                 <Badge
                   variant="destructive"
-                  className="absolute top-2 right-1/4 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs"
+                  className="absolute top-1.5 left-1/2 -translate-x-1/2 h-5 min-w-5 px-1 rounded-full flex items-center justify-center text-xs font-semibold"
                 >
                   {item.badge}
                 </Badge>

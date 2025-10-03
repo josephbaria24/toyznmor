@@ -17,34 +17,83 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-primary/5">
         <div className="absolute inset-0 bg-grid-slate-900/[0.04] bg-[size:32px_32px]" />
-        <div className="relative container max-w-6xl mx-auto px-4 py-20 md:py-32">
-          <div className="text-center space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
-              <Sparkles className="h-4 w-4" />
-              New Arrivals Available Now
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse delay-1000" />
+        
+        <div className="relative container max-w-7xl mx-auto px-4 py-20 md:py-32">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="space-y-8 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
+                <Sparkles className="h-4 w-4" />
+                New Arrivals Available Now
+              </div>
+              
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
+                Discover Premium
+                <span className="block mt-2 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                  Quality Products
+                </span>
+              </h1>
+              
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 text-pretty leading-relaxed">
+                Shop the latest collection of high-quality products curated just for you. Experience excellence in every purchase.
+              </p>
+              
+              <div className="flex gap-4 justify-center lg:justify-start flex-wrap pt-4">
+                <Button size="lg" className="gap-2 shadow-lg hover:shadow-xl transition-shadow" asChild>
+                  <Link href="#products">
+                    Shop Now
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button size="lg" variant="outline" className="gap-2 border-2" asChild>
+                  <Link href="/categories">Browse Categories</Link>
+                </Button>
+              </div>
             </div>
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
-              Discover Premium
-              <span className="block mt-2 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                Quality Products
-              </span>
-            </h1>
-            
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-              Shop the latest collection of high-quality products curated just for you. Experience excellence in every purchase.
-            </p>
-            
-            <div className="flex gap-4 justify-center flex-wrap pt-4">
-              <Button size="lg" className="gap-2 shadow-lg hover:shadow-xl transition-shadow" asChild>
-                <Link href="#products">
-                  Shop Now
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" className="gap-2 border-2" asChild>
-                <Link href="/categories">Browse Categories</Link>
-              </Button>
+
+            {/* Right Image/Graphics */}
+            <div className="relative hidden lg:block">
+              <div className="relative aspect-square max-w-xl mx-auto">
+                {/* Main Hero Image */}
+                <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=800&fit=crop"
+                    alt="Shopping"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
+                </div>
+                
+                {/* Floating Card 1 */}
+                <div className="absolute -top-6 -right-6 bg-background rounded-2xl shadow-xl p-6 border animate-bounce">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <TrendingUp className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-2xl font-bold">500+</p>
+                      <p className="text-xs text-muted-foreground">Products</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Floating Card 2 */}
+                <div className="absolute -bottom-6 -left-6 bg-background rounded-2xl shadow-xl p-6 border animate-pulse">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Sparkles className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-2xl font-bold">100%</p>
+                      <p className="text-xs text-muted-foreground">Satisfaction</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

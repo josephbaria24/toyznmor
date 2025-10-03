@@ -31,7 +31,7 @@ export function AdminNav() {
       <Link href="/" className="flex items-center gap-2 font-semibold text-base md:text-lg mr-2 md:mr-4 flex-shrink-0">
         <Store className="h-5 w-5 md:h-6 md:w-6" />
         <span className="hidden sm:inline">Joseph's store Admin</span>
-        <span className="sm:hidden">TTM Admin</span>
+        <span className="sm:hidden">JS Admin</span>
       </Link>
 
       {links.map((link) => {

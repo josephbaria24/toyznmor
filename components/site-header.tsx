@@ -15,7 +15,7 @@ export function SiteHeader() {
         <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
           <Store className="h-6 w-6" />
           <span className="hidden sm:inline">Joseph's store</span>
-          <span className="sm:hidden">TTM</span>
+          <span className="sm:hidden">JS</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">

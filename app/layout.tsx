@@ -10,7 +10,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "tech, toyz n mor - Premium Ecommerce Store",
+  title: "Joseph's store - Premium Ecommerce Store",
   description: "Discover premium products curated just for you",
   generator: "v0.app",
 }

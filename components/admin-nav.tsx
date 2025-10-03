@@ -30,7 +30,7 @@ export function AdminNav() {
     <nav className="flex items-center gap-4 md:gap-6 w-full overflow-x-auto">
       <Link href="/" className="flex items-center gap-2 font-semibold text-base md:text-lg mr-2 md:mr-4 flex-shrink-0">
         <Store className="h-5 w-5 md:h-6 md:w-6" />
-        <span className="hidden sm:inline">tech, toyz n mor Admin</span>
+        <span className="hidden sm:inline">Joseph's store Admin</span>
         <span className="sm:hidden">TTM Admin</span>
       </Link>
 

@@ -146,7 +146,7 @@ export default function CartPage() {
 
       <footer className="border-t py-8 px-4 mt-auto">
         <div className="container max-w-7xl mx-auto text-center text-sm text-muted-foreground">
-          <p>&copy; 2025 tech, toyz n mor. All rights reserved.</p>
+          <p>&copy; 2025 Joseph's store. All rights reserved.</p>
         </div>
       </footer>
 

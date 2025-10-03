@@ -12,7 +12,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <main className="flex-1">{children}</main>
       <footer className="border-t py-6 px-4">
         <div className="container text-center text-sm text-muted-foreground">
-          <p>&copy; 2025 tech, toyz n mor Admin. All rights reserved.</p>
+          <p>&copy; 2025 Joseph's store Admin. All rights reserved.</p>
         </div>
       </footer>
     </div>

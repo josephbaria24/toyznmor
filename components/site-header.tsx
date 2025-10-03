@@ -14,7 +14,7 @@ export function SiteHeader() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
           <Store className="h-6 w-6" />
-          <span className="hidden sm:inline">tech, toyz n mor</span>
+          <span className="hidden sm:inline">Joseph's store</span>
           <span className="sm:hidden">TTM</span>
         </Link>
 
